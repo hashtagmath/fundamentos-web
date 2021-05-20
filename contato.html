@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <ul id="menu">
+<body leftmargin="250" style="background-color: #BBC7BA">
+
+    <ul style="background-color: black;" id="menu">
         <li>
             <a href="index.html"> Home </a>
         </li>
@@ -18,32 +19,42 @@
             <a href="contato.html"> Contato </a>
         </li>
     </ul>
-    <div>
-        <h1>Entre em contato</h1>
 
-        <form>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome">
-            <br> <br>
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email">
-            <br> <br>
-            <label for="assunto">Assunto:</label><br>
-            <textarea name="assunto" id="" cols="50" rows="10"></textarea>
-            <br> <br>
-            <button>Enviar</button>
-        </form>
 
-        <h2>Endereço:</h2>
-        <p>R. Arquiteto Olavo Redig de Campos, 105</p>
-        <p>Chácara Santo Antônio, São Paulo - SP, 04711-904</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14621.428962493013!2d-46.7020682!3d-23.6273741!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f9f16f43c0757bc!2sEZ%20Towers%20-%20EZTEC!5e0!3m2!1spt-BR!2sbr!4v1621357234574!5m2!1spt-BR!2sbr"
-            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="container">
+        <div>
+            <h1>Entre em contato</h1>
+
+            <form>
+                <label for='nome'>Nome:</label><br>
+                <input type='text' id='nome' onkeyup='validaNome()'>
+                <div id='txtNome'></div>
+                <br>
+                <label for='email'>E-mail:</label><br>
+                <input type='email' id='email' onkeyup='validaEmail()'>
+                <div id='txtEmail'></div>
+                <br>
+                <label for='assunto'>Assunto:</label><br>
+                <textarea name='assunto' id="assunto" cols="50" rows="10" onkeyup='validaAssunto()'></textarea>
+                <div id='txtAssunto'></div>
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+
+
+        <div class="margem">
+            <h2>Endereço:</h2>
+            <p>R. Arquiteto Olavo Redig de Campos, 105</p>
+            <p>Chácara Santo Antônio, São Paulo - SP, 04711-904</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14621.428962493013!2d-46.7020682!3d-23.6273741!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f9f16f43c0757bc!2sEZ%20Towers%20-%20EZTEC!5e0!3m2!1spt-BR!2sbr!4v1621357234574!5m2!1spt-BR!2sbr"
+                width="330" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
+    <br>
     <footer>
-        <p class="center">
-            Criado por: Matheus Silva
+        <p class="center sizeCopy"> Criado por: Matheus Silva
         </p>
         <div class="container">
             <a href="https://www.linkedin.com/in/matheus-silva-81838a98/" target="_blank">
@@ -56,7 +67,10 @@
                 <img class="tm-social p20" src="assets/img/github.png" alt="logo do GitHub">
             </a>
 
-        </div>
+    </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>

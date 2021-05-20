@@ -21,27 +21,49 @@ Estilos da página index.html
 }
 #menu li a{
     text-decoration: none;
-    color: black;
+    color: antiquewhite; 
     font-size: 18px;
 }
 #menu li a:hover{
-    color: grey
+    color: #DBCAD3;
 }
 
 .container{
     display: flex;
     flex-flow: row;
     justify-content: center;
-    align-items: justify;
-    
-    
+    align-items: justify;    
 }
+
 .tm-social{
     width: 40px;
     height: 40px;
     }
+.justificar{
+    justify-content: justify;
+}
+
+.sizeCopy{
+    color: antiquewhite;
+    background-color: black;
+
+}
+
+
+
+
 
 
 /*
 Estilos da página contato.html
 */
+
+.margem{
+    margin-left: 80px;
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: justify;    
+}
